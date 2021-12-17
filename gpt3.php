@@ -12,7 +12,7 @@ curl_setopt_array($curl, array(
   CURLOPT_CUSTOMREQUEST => 'POST',
   CURLOPT_POSTFIELDS =>'{
   
-  "prompt": "English:Hello world\n\nTurkish:Merhaba Dünya\nEnglish: }",
+  "prompt": "English:Hello world\n\nTurkish:Merhaba Dünya\nEnglish: '.$_GET['metin'].'\nTurkish: }",
   "temperature": 0.5,
   "max_tokens": 100,
   "top_p": 1.0,
